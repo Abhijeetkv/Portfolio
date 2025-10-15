@@ -1,5 +1,6 @@
 import React, { useRef, Fragment } from "react";
 import { motion } from "framer-motion";
+import AgeCounter from "./ui/AgeCounter";
 
 // ✅ Import all assets
 import Globe from "../assets/images/globe.png";
@@ -226,12 +227,15 @@ const AboutSection: React.FC = () => {
               />
 
               {/* 😄 Center Emoji (static, no blink) */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-indigo-400 to-sky-400 flex items-center justify-center shadow-lg">
+              <div className="absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-indigo-400 to-sky-400 flex items-center justify-center shadow-lg">
                 <img
                   src={Abhi1}
                   alt="Memoji"
                   className="size-16 rounded-full object-cover"
                 />
+              </div>
+              <div className="z-20 mt-14">
+                <AgeCounter birthDate="2005-12-16"  />
               </div>
             </div>
           </div>
