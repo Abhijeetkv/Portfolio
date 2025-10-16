@@ -1,7 +1,5 @@
 import React, { useState, FormEvent } from "react";
-import {
-  Send,
-} from "lucide-react";
+import { Send } from "lucide-react";
 import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
 import { cn } from "../lib/utils";
@@ -53,7 +51,10 @@ const ContactMe: React.FC = () => {
     <section id="contact" className="py-24 md:px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">Touch</span>
+          Get In{" "}
+          <span className="bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">
+            Touch
+          </span>
         </h2>
 
         <p className="text-center text-muted-foreground md:mb-12 max-w-2xl mx-auto">
@@ -63,19 +64,22 @@ const ContactMe: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
-          
-          </div>
+          <div className="mx-auto mt-8"></div>
 
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
             className="bg-card p-4 lg:p-8  rounded-lg lg:rounded-2xl shadow-sm space-y-6"
           >
-            <h3 className="md:text-2xl px-1 text-start font-semibold mb-6 bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">Let’s create something amazing.</h3>
+            <h3 className="md:text-2xl px-1 text-start font-semibold mb-6 bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">
+              Let’s create something amazing.
+            </h3>
 
             <div>
-              <label htmlFor="name" className="block text-sm text-start px-1 font-medium mb-2">
+              <label
+                htmlFor="name"
+                className="block text-sm text-start px-1 font-medium mb-2"
+              >
                 Name
               </label>
               <input
@@ -89,7 +93,10 @@ const ContactMe: React.FC = () => {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-start px-1 text-sm font-medium mb-2">
+              <label
+                htmlFor="email"
+                className="block text-start px-1 text-sm font-medium mb-2"
+              >
                 Email
               </label>
               <input
