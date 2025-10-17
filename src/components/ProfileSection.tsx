@@ -61,14 +61,15 @@ const ProfileSection: React.FC = () => {
             <ArrowDown className="pt-1" size={22} />
           </Link>
 
-          <a
-            href="mailto:abhijeetkv2@gmail.com"
+          {/* <button>
+            <a
+            href="https://www.linkedin.com/in/abhijeet-verma-a3103425a/"
             target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105"
           >
-            <span className="font-semibold">Let's Connect</span>
+            <p className="font-semibold">Let's Connect</p>
           </a>
+          </button> */}
         </div>
       </div>
     </div>
