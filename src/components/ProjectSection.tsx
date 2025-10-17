@@ -8,7 +8,7 @@ import CaelumX from "../assets/images/CaelumX.png";
 
 // ✅ Import SVG icons
 import CheckCircleIcon from "../assets/icons/check-circle.svg";
-import GithubIcon from "../assets/icons/Github.svg";
+import GithubIcon from "../assets/icons/Github.png";
 import ArrowUpIcon from "../assets/icons/arrow-up-right.svg";
 
 // ✅ Import custom components
