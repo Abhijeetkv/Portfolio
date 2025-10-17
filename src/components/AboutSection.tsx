@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import AgeCounter from "./ui/AgeCounter";
 
 // ✅ Import all assets
-import Globe from "../assets/images/globe.png";
+import Globe from "../assets/images/Globe.png";
 import Abhi1 from "../assets/images/abhi1.jpg"
 import TypeScriptIcon from "../assets/images/typescript.png";
 import TailwindIcon from "../assets/images/tailwind.png";
