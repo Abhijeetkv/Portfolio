@@ -1,4 +1,5 @@
-import React, { useState, FormEvent } from "react";
+import React, { useState } from "react";
+import type { FormEvent } from "react"; // ✅ type-only import
 import { Send } from "lucide-react";
 import emailjs from "emailjs-com";
 import toast from "react-hot-toast";
@@ -22,7 +23,6 @@ const ContactMe: React.FC = () => {
     const name = formData.get("name") as string;
     const message = formData.get("message") as string;
 
-    // ✅ Validation
     if (!name || !email || !message) {
       toast.error("Please fill out all fields before submitting.");
       setIsSubmitting(false);
@@ -63,13 +63,11 @@ const ContactMe: React.FC = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Contact Information */}
           <div className="mx-auto mt-8"></div>
 
-          {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="bg-card p-4 lg:p-8  rounded-lg lg:rounded-2xl shadow-sm space-y-6"
+            className="bg-card p-4 lg:p-8 rounded-lg lg:rounded-2xl shadow-sm space-y-6"
           >
             <h3 className="md:text-2xl px-1 text-start font-semibold mb-6 bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">
               Let’s create something amazing.
