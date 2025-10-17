@@ -36,7 +36,7 @@ interface Project {
 const portfolioProjects: Project[] = [
   {
     company: "MERN Stack, JavaScript, TailwindCSS, Vite, Clerk, Stripe",
-    year: "2024",
+    year: "2025",
     title: "ElevateU",
     results: [
       {
@@ -56,7 +56,7 @@ const portfolioProjects: Project[] = [
   {
     company:
       "React, JavaScript, TailwindCSS, Framer-motion",
-    year: "2025",
+    year: "2024",
     title: "SaaS Landing Page",
     results: [
       { title: "It is a landing page for a SaaS product" },
