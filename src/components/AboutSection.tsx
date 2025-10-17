@@ -7,6 +7,10 @@ import Globe from "../assets/images/globe.png";
 import Abhi1 from "../assets/images/abhi1.jpg"
 import TypeScriptIcon from "../assets/images/typescript.png";
 import TailwindIcon from "../assets/images/tailwind.png";
+import PrismaIcon from "../assets/images/prisma.png";
+import PostgresIcon from "../assets/images/postgres.png";
+import ReduxIcon from "../assets/images/redux.png";
+import NextjsIcon from "../assets/images/next.png";
 
 // ✅ Import icons
 import Clerk from "../assets/icons/clerk.avif";
@@ -35,6 +39,10 @@ const toolboxItems1 = [
   { title: "TailwindCss", icon: TailwindIcon },
   { title: "React", icon: ReactIcon },
   { title: "ReactNative", icon: ReactIcon },
+  { title: "Prisma", icon: PrismaIcon },
+  { title: "Postgres", icon: PostgresIcon },
+  { title: "Redux", icon: ReduxIcon },
+  { title: "Nextjs", icon: NextjsIcon },
 ];
 
 const toolboxItems2 = [

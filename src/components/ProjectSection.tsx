@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // ✅ Import images
-import FinWell from "../assets/images/FinWell.png";
 import ElevateU from "../assets/images/ElevateU.png";
 import Saas from "../assets/images/Saas.png";
+import CaelumX from "../assets/images/CaelumX.png";
 
 // ✅ Import SVG icons
 import CheckCircleIcon from "../assets/icons/check-circle.svg";
@@ -85,7 +85,7 @@ const portfolioProjects: Project[] = [
     ],
     link: { url: "https://github.com/Abhijeetkv/CaelumX", target: "_blank" },
     liveLink: "https://github.com/Abhijeetkv/CaelumX",
-    image: FinWell,
+    image: CaelumX,
     featured: true,
   },
 ];
