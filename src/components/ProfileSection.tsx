@@ -1,79 +1,209 @@
-import { Link } from "react-router-dom";
-import { ArrowDown } from "lucide-react";
-import React from "react";
-import GrainImage from "../assets/images/grain.jpg";
-import profile from "../assets/images/abhij.jpg";
+import { motion } from "framer-motion";
+import {
+  Github,
+  Twitter,
+  Linkedin,
+  Mail,
+  MoreHorizontal,
+  FileText,
+  MessageCircle,
+} from "lucide-react";
+import abhij from "../assets/images/abhij.jpg";
+import cover from "../assets/images/cover.png";
 
-const ProfileSection: React.FC = () => {
+const socialLinks = [
+  { icon: Github, label: "GitHub", href: "https://github.com/Abhijeetkv" },
+  { icon: Twitter, label: "Twitter", href: "https://x.com/Abhijeetakv" },
+  {
+    icon: Linkedin,
+    label: "Linkedin",
+    href: "https://www.linkedin.com/in/abhijeet-verma-a3103425a/",
+  },
+  {
+    icon: Mail,
+    label: "Email",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=abhijeetkv2@gmail.com",
+  },
+];
+
+const Hero = () => {
   return (
-    <div id="hero" className="py-32 md:py-30 relative z-0 overflow-x-clip">
-      {/* Background */}
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_40%,transparent)]">
-        <div
-          className="absolute inset-0 -z-30 opacity-5"
+    <section
+      id="home"
+      className="relative min-h-screen pt-16 pb-16 overflow-hidden"
+    >
+      <div className="absolute inset-0 hero-pattern opacity-30" />
+
+      <div className="absolute right-20 top-32 ">
+        <svg width="200" height="400" viewBox="0 0 200 400" fill="none">
+          <path
+            d="M100 0 L100 80 L160 140 L160 200 L100 260 L100 340 L60 380"
+            stroke="#333"
+            strokeWidth="1"
+          />
+          <path d="M100 80 L40 140 L40 200" stroke="#333" strokeWidth="1" />
+          <circle cx="100" cy="80" r="4" fill="#444" />
+          <circle cx="160" cy="140" r="4" fill="#444" />
+          <circle cx="40" cy="140" r="4" fill="#444" />
+          <circle cx="160" cy="200" r="4" fill="#444" />
+          <circle cx="40" cy="200" r="4" fill="#444" />
+          <circle cx="100" cy="260" r="4" fill="#444" />
+          <circle cx="100" cy="340" r="4" fill="#444" />
+          <rect
+            x="96"
+            y="76"
+            width="8"
+            height="8"
+            rx="0"
+            transform="rotate(45, 100, 80)"
+            fill="#555"
+          />
+          <rect
+            x="156"
+            y="136"
+            width="8"
+            height="8"
+            rx="0"
+            transform="rotate(45, 160, 140)"
+            fill="#555"
+          />
+          <rect
+            x="96"
+            y="256"
+            width="8"
+            height="8"
+            rx="0"
+            transform="rotate(45, 100, 260)"
+            fill="#555"
+          />
+          <rect
+            x="96"
+            y="336"
+            width="8"
+            height="8"
+            rx="0"
+            transform="rotate(45, 100, 340)"
+            fill="#555"
+          />
+        </svg>
+      </div>
+
+      <div className="relative max-w-6xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="w-full h-48 rounded-xl overflow-hidden mb-6 border border-white/5 inset-0"
           style={{
-            backgroundImage: `url(${GrainImage})`,
-            backgroundSize: "cover",
+            background: `
+              repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(50,50,50,0.3) 10px,
+                rgba(50,50,50,0.3) 11px
+              ),
+              repeating-linear-gradient(
+                -45deg,
+                transparent,
+                transparent 10px,
+                rgba(50,50,50,0.3) 10px,
+                rgba(50,50,50,0.3) 11px
+              )
+            `,
+            backgroundColor: "#161616",
           }}
-        />
-      </div>
+        >
+          <img src={cover} alt="cover" className="h-full" />
+        </motion.div>
 
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center">
-          {/* Profile Image */}
-          <div className="relative w-[200px] h-[200px] rounded-full overflow-hidden border-4 border-white/20">
-            <img
-              src={profile}
-              alt="Abhijeet Kumar"
-              className="object-cover w-full h-full"
-            />
+        {/* Profile Section */}
+        <div className="flex flex-col lg:flex-row lg:items-start gap-8">
+          <div className="flex-1">
+            {/* Avatar + Name */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="flex items-center gap-4 mb-6 -mt-16"
+            >
+              <div className="w-22 h-22 rounded-xl bg-white flex items-center justify-center  overflow-hidden">
+                <img src={abhij} alt="Abhijeet Kumar" />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="flex items-center gap-3 mb-5"
+            >
+              <h1 className="text-3xl font-bold text-white">Abhijeet Kumar</h1>
+            </motion.div>
+
+            {/* Bio */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg text-neutral-400 leading-relaxed mb-6 max-w-xl text-start"
+            >
+              Building seamless digital experiences from front to back — I’m a
+              <strong className="text-white font-semibold">
+                {" "}
+                Full-Stack Web & App Developer{" "}
+              </strong>{" "}
+              who turns ideas into functional, elegant apps.
+            </motion.p>
+
+            {/* Socials */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25 }}
+            >
+              <p className="text-sm text-neutral-500 text-start font-mono mb-3">
+                Here are my socials
+              </p>
+              <div className="flex flex-wrap gap-2 mb-8">
+                {socialLinks.map((link) => (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    className="flex items-center gap-2 px-4 py-2 rounded-lg bg-neutral-800/60 border border-white/5 text-neutral-300 text-sm hover:bg-neutral-700/60 hover:text-white transition-all duration-200"
+                  >
+                    <link.icon className="w-4 h-4" />
+                    <span>{link.label}</span>
+                  </a>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex gap-3 mb-12"
+            >
+              <a
+                href="#"
+                className="flex items-center gap-2 px-6 py-3 rounded-lg bg-neutral-800/80 border border-white/10 text-white text-sm font-medium hover:bg-neutral-700/80 transition-all duration-200"
+              >
+                Resume <FileText className="w-4 h-4" />
+              </a>
+              <a
+                href="#"
+                className="flex items-center gap-2 px-6 py-3 rounded-lg bg-neutral-800/80 border border-white/10 text-white text-sm font-medium hover:bg-neutral-700/80 transition-all duration-200"
+              >
+                Connect <MessageCircle className="w-4 h-4" />
+              </a>
+            </motion.div>
           </div>
-
-          {/* Availability Badge */}
-          <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg mt-4">
-            <div className="relative flex items-center justify-center">
-              <div className="absolute w-3 h-3 rounded-full bg-green-500/60 animate-ping-pop"></div>
-              <div className="relative w-2.5 h-2.5 bg-green-500 rounded-full shadow-[0_0_8px_rgba(34,197,94,0.7)]"></div>
-            </div>
-            <div className="text-sm font-medium">Available for New Projects</div>
-          </div>
-        </div>
-
-        {/* Name & Bio */}
-        <div className="max-w-lg mx-auto">
-          <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide font-semibold text-gradient animate-fade-in-delay-1">
-            Abhijeet Kumar
-          </h1>
-          <p className="mt-4 text-center text-white/60 md:text-lg">
-            Building seamless digital experiences from front to back — I’m a
-            Full-Stack Developer who turns ideas into functional, elegant web
-            apps.
-          </p>
-        </div>
-
-        {/* Buttons */}
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-          <Link
-            to="/projects"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2"
-          >
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="pt-1" size={22} />
-          </Link>
-
-          {/* <button>
-            <a
-            href="https://www.linkedin.com/in/abhijeet-verma-a3103425a/"
-            target="_blank"
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl transition-transform duration-300 ease-in-out transform hover:scale-105"
-          >
-            <p className="font-semibold">Let's Connect</p>
-          </a>
-          </button> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default ProfileSection;
+export default Hero;

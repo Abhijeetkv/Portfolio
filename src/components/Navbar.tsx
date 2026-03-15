@@ -52,10 +52,10 @@ const navItems: NavItem[] = [
         {/* Mobile menu toggle */}
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden p-2 text-foreground z-50"
+          className="md:hidden text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
 
         {/* Mobile nav */}
