@@ -4,7 +4,6 @@ import {
   Twitter,
   Linkedin,
   Mail,
-  MoreHorizontal,
   FileText,
   MessageCircle,
 } from "lucide-react";
