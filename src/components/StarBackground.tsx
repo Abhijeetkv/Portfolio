@@ -109,6 +109,59 @@ const StarBackground: FC = () => {
           }}
         />
       ))}
+      <div className="absolute right-20 top-32 hidden md:block">
+        <svg width="200" height="400" viewBox="0 0 200 400" fill="none">
+          <path
+            d="M100 0 L100 80 L160 140 L160 200 L100 260 L100 340 L60 380"
+            stroke="#333"
+            strokeWidth="1"
+          />
+          <path d="M100 80 L40 140 L40 200" stroke="#333" strokeWidth="1" />
+          <circle cx="100" cy="80" r="4" fill="#444" />
+          <circle cx="160" cy="140" r="4" fill="#444" />
+          <circle cx="40" cy="140" r="4" fill="#444" />
+          <circle cx="160" cy="200" r="4" fill="#444" />
+          <circle cx="40" cy="200" r="4" fill="#444" />
+          <circle cx="100" cy="260" r="4" fill="#444" />
+          <circle cx="100" cy="340" r="4" fill="#444" />
+          <rect
+            x="96"
+            y="76"
+            width="8"
+            height="8"
+            rx="0"
+            transform="rotate(45, 100, 80)"
+            fill="#555"
+          />
+          <rect
+            x="156"
+            y="136"
+            width="8"
+            height="8"
+            rx="0"
+            transform="rotate(45, 160, 140)"
+            fill="#555"
+          />
+          <rect
+            x="96"
+            y="256"
+            width="8"
+            height="8"
+            rx="0"
+            transform="rotate(45, 100, 260)"
+            fill="#555"
+          />
+          <rect
+            x="96"
+            y="336"
+            width="8"
+            height="8"
+            rx="0"
+            transform="rotate(45, 100, 340)"
+            fill="#555"
+          />
+        </svg>
+      </div>
     </div>
   );
 };
