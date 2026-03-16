@@ -23,7 +23,7 @@ const AgeCounter: React.FC<AgeCounterProps> = ({ birthDate }) => {
   }, [birthDate]);
 
   return (
-    <div className=" text-lg  bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">
+    <div className=" text-lg text-white ">
       <p>been here since</p>
       <p className="font-mono text-2xl">{age.toFixed(9)} years</p>
     </div>

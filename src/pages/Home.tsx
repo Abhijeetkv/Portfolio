@@ -2,12 +2,12 @@ import StarBackground from "../components/StarBackground";
 import Navbar from "../components/Navbar";
 import ProfileSection from "../components/ProfileSection";
 import AboutSection from "../components/AboutSection";
-import ProjectSection from "../components/ProjectSection";
-import TapeSection from "../components/ui/TapeSection";
+// import TapeSection from "../components/ui/TapeSection";
 import { useEffect } from "react";
 import FooterSection from "../components/FooterSection";
 import ContactMe from "../components/ContactMe";
 import { Toaster } from "react-hot-toast";
+import Projects from "../components/Projects";
 
 const Home = () => {
   useEffect(() => {
@@ -32,11 +32,12 @@ const Home = () => {
 
           {/*  Projects Section */}
           <section id="projects">
-            <ProjectSection />
+            {/* <ProjectSection /> */}
+            <Projects />
           </section>
 
           {/* Tape Section (optional visual divider) */}
-          <TapeSection />
+          {/* <TapeSection /> */}
 
           {/* About Section */}
           <section id="about">

@@ -48,28 +48,28 @@ const ContactMe: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-24 md:px-4 relative bg-secondary/30">
+    <section id="contact" className="py-12 md:px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <h2 className="text-3xl  md:text-4xl font-bold mb-4 text-center">
           Get In{" "}
-          <span className="bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">
+          <span className="text-neutral-400">
             Touch
           </span>
         </h2>
 
-        <p className="text-center text-muted-foreground md:mb-12 max-w-2xl mx-auto">
+        <p className="text-start text-neutral-400 leading-relaxed text-muted-foreground md:mb-12 max-w-2xl mx-auto">
           Have a project in mind or want to collaborate? Feel free to reach out.
           I'm always open to discussing new opportunities.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="mx-auto mt-8"></div>
+          <div className="mx-auto mt-4"></div>
 
           <form
             onSubmit={handleSubmit}
-            className="bg-card p-4 lg:p-8 rounded-lg lg:rounded-2xl shadow-sm space-y-6"
+            className="border border-input p-2 lg:p-8 rounded-lg lg:rounded-2xl shadow-sm space-y-6"
           >
-            <h3 className="md:text-2xl px-1 text-start font-semibold mb-6 bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">
+            <h3 className="md:text-2xl px-1 text-lg text-start font-semibold mb-6 ">
               Let’s create something amazing.
             </h3>
 
@@ -85,7 +85,7 @@ const ContactMe: React.FC = () => {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-1"
                 placeholder="Your Name"
               />
             </div>
@@ -102,7 +102,7 @@ const ContactMe: React.FC = () => {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-1"
                 placeholder="xyz@gmail.com"
               />
             </div>
@@ -118,7 +118,7 @@ const ContactMe: React.FC = () => {
                 id="message"
                 name="message"
                 required
-                className="w-full h-[150px] px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                className="w-full h-[150px] px-4 py-3 rounded-md border border-input bg-background focus:outline-none focus:ring-1 resize-none"
                 placeholder="Your Message"
               />
             </div>

@@ -5,11 +5,11 @@ const SectionHeader = ({
   description,
 }: {
   title: string;
-  eyebrow: string;
+  eyebrow?: string;
   description: string;
 }) => {
   return (
-    <div className="text-center">
+    <div className="text-start">
       <p className="uppercase text-xl font-semibold tracking-widest bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">
         {eyebrow}
       </p>
@@ -18,7 +18,7 @@ const SectionHeader = ({
         {title}
       </h2>
 
-      <p className="text-white/60 md:text-lg lg:text-xl mt-4 max-w-md mx-auto">
+      <p className="text-white/60 md:text-lg lg:text-xl mt-4 max-w-md ">
         {description}
       </p>
     </div>
