@@ -1,5 +1,4 @@
-import React, { type JSX } from "react"; // ✅ Import JSX type explicitly
-import ArrowUpRightIcon from "../assets/icons/arrow-up-right.svg";
+import React, { type JSX } from "react"; 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
@@ -47,7 +46,7 @@ export const Footer: React.FC = () => {
             &copy; 2025. All rights reserved.
           </div>
 
-          <nav className="flex flex-col md:flex-row items-center gap-8">
+          <nav className="flex flex-row items-center gap-8">
             {footerLinks.map((link) => (
               <a
                 href={link.href}
@@ -58,8 +57,8 @@ export const Footer: React.FC = () => {
                            hover:scale-105 hover:text-indigo-400"
               >
                 {link.icon}
-                <span className="font-medium">{link.title}</span>
-                <img src={ArrowUpRightIcon} alt="" />
+                {/* <span className="font-medium">{link.title}</span>
+                <img src={ArrowUpRightIcon} alt="" /> */}
               </a>
             ))}
           </nav>

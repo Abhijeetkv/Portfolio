@@ -4,7 +4,7 @@ import AgeCounter from "./ui/AgeCounter";
 
 // ✅ Import all assets
 import Globe from "../assets/images/Globe.png";
-import Abhi1 from "../assets/images/abhi1.jpg"
+import Abhi1 from "../assets/images/abhi1.jpg";
 import TypeScriptIcon from "../assets/images/typescript.png";
 import TailwindIcon from "../assets/images/tailwind.png";
 import PrismaIcon from "../assets/images/prisma.png";
@@ -57,7 +57,6 @@ const toolboxItems2 = [
   { title: "Postman", icon: PostmanIcon },
   { title: "Vercel", icon: VercelIcon },
   { title: "Stripe", icon: StripeIcon },
-
 ];
 
 const hobbies = [
@@ -80,9 +79,13 @@ const AboutSection: React.FC = () => {
         {/* Header */}
         <div className="text-center">
           {/* <p className="uppercase text-xl font-semibold tracking-widest bg-gradient-to-r from-indigo-400 to-sky-400 bg-clip-text text-transparent">Who am I?</p> */}
-          <h2 className="text-4xl md:text-5xl font-bold mt-2">About Me</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mt-2">
+            About <span className="text-neutral-400">Me</span>
+          </h2>
           <p className="text-theme-muted-fg text-neutral-400 leading-relaxed text-start t max-w-2xl mx-auto mt-4">
-            I’m a Full Stack Developer driven by a passion for designing robust architectures and functional, data-driven solutions that deliver real-world impact.
+            I’m a Full Stack Developer driven by a passion for designing robust
+            architectures and functional, data-driven solutions that deliver
+            real-world impact.
           </p>
         </div>
 
@@ -98,14 +101,13 @@ const AboutSection: React.FC = () => {
               </p>
               <ul className="list-disc space-y-3 text-sm pl-5 flex-grow overflow-y-auto lg:mt-5">
                 <li className="">
-                    B.Tech in Computer Science and Engineering
-                  {" "}
-                  -{" "}
+                  B.Tech in Computer Science and Engineering -{" "}
                   <strong>Parul University</strong>
                   <br />
-                  <span className="text-theme-muted-fg"><strong>2023 - 2027</strong></span>
+                  <span className="text-theme-muted-fg">
+                    <strong>2023 - 2027</strong>
+                  </span>
                 </li>
-                
               </ul>
             </div>
 
@@ -140,7 +142,7 @@ const AboutSection: React.FC = () => {
                             src={tool.icon}
                             alt={tool.title}
                             className="w-6 h-6 sm:w-8 sm:h-8 object-contain drop-shadow-md"
-                            style={{ filter: "none" }} 
+                            style={{ filter: "none" }}
                           />
                           <span className="font-medium text-xs sm:text-sm truncate">
                             {tool.title}
@@ -189,7 +191,6 @@ const AboutSection: React.FC = () => {
 
           {/* Beyond the Code + Map */}
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8 items-stretch">
-            {/* Beyond the Code */}
             <div className="col-span-3 text-start lg:col-span-2 bg-theme-card text-theme-card-fg rounded-2xl p-6 shadow-lg border border-theme-border relative flex flex-col h-[300px] overflow-hidden">
               <h3 className="text-xl font-semibold mb-2">Beyond The Code</h3>
               <p className="text-sm text-neutral-400 leading-relaxed text-theme-muted-fg mb-4">
@@ -242,7 +243,7 @@ const AboutSection: React.FC = () => {
                 />
               </div>
               <div className="z-20 mt-14">
-                <AgeCounter birthDate="2005-12-16"  />
+                <AgeCounter birthDate="2005-12-16" />
               </div>
             </div>
           </div>
