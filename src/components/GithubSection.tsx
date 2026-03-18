@@ -16,12 +16,12 @@ interface GitHubSectionProps {
   username: string;
 }
 
-const GitHubSection: React.FC<GitHubSectionProps> = ({ username }) => {
+const GitHubSection: React.FC<GitHubSectionProps> = ({ username: Abhijeetkv }) => {
   const [user, setUser] = useState<GitHubUser | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`https://api.github.com/users/${username}`)
+    fetch(`https://api.github.com/users/${Abhijeetkv}`)
       .then((res) => res.json())
       .then((data) => {
         setUser(data);
@@ -31,7 +31,7 @@ const GitHubSection: React.FC<GitHubSectionProps> = ({ username }) => {
         console.error("Error fetching GitHub data:", err);
         setLoading(false);
       });
-  }, [username]);
+  }, [Abhijeetkv]);
 
   if (loading)
     return <p className="text-center text-gray-400">Loading GitHub data...</p>;
@@ -94,8 +94,8 @@ const GitHubSection: React.FC<GitHubSectionProps> = ({ username }) => {
           Contribution Graph
         </h3>
         <img
-          src={`https://ghchart.rshah.org/00c16a/${username}`}
-          alt={`${username}'s GitHub contribution graph`}
+          src={`https://ghchart.rshah.org/00c16a/${Abhijeetkv}`}
+          alt={`${Abhijeetkv}'s GitHub contribution graph`}
           className="w-full h-auto"
         />
       </div>

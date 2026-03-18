@@ -1,31 +1,27 @@
 import { motion } from "framer-motion";
 import {
   Github,
-  Twitter,
   Linkedin,
-  Mail,
   FileText,
   MessageCircle,
 } from "lucide-react";
 import abhij from "../assets/images/abhij.jpg";
 import cover from "../assets/images/cover.png";
+import { FaXTwitter } from "react-icons/fa6";
 
 const socialLinks = [
   { icon: Github, label: "GitHub", href: "https://github.com/Abhijeetkv" },
-  { icon: Twitter, label: "Twitter", href: "https://x.com/Abhijeetakv" },
+  { icon: FaXTwitter, label: "Twitter", href: "https://x.com/Abhijeetakv" },
   {
     icon: Linkedin,
     label: "Linkedin",
     href: "https://www.linkedin.com/in/abhijeet-verma-a3103425a/",
   },
-  {
-    icon: Mail,
-    label: "Email",
-    href: "https://mail.google.com/mail/?view=cm&fs=1&to=abhijeetkv2@gmail.com",
-  },
+  
 ];
 
 const Hero = () => {
+
   return (
     <section
       id="home"
@@ -87,7 +83,7 @@ const Hero = () => {
         </svg>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6">
+      <div className="relative max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -186,13 +182,17 @@ const Hero = () => {
               className="flex gap-3 mb-12"
             >
               <a
-                href="#"
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 rounded-lg bg-neutral-800/80 border border-white/10 text-white text-sm font-medium hover:bg-neutral-700/80 transition-all duration-200"
               >
                 Resume <FileText className="w-4 h-4" />
               </a>
+
               <a
-                href="#"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=abhijeetkv2@gmail.com"
+                target="_blank"
                 className="flex items-center gap-2 px-6 py-3 rounded-lg bg-neutral-800/80 border border-white/10 text-white text-sm font-medium hover:bg-neutral-700/80 transition-all duration-200"
               >
                 Connect <MessageCircle className="w-4 h-4" />

@@ -2,7 +2,6 @@ import StarBackground from "../components/StarBackground";
 import Navbar from "../components/Navbar";
 import ProfileSection from "../components/ProfileSection";
 import AboutSection from "../components/AboutSection";
-// import TapeSection from "../components/ui/TapeSection";
 import { useEffect } from "react";
 import FooterSection from "../components/FooterSection";
 import ContactMe from "../components/ContactMe";
@@ -16,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <div className="min-h-screen bg-black text-foreground overflow-x-hidden">
         {/* Background Effects */}
         <StarBackground />
 
