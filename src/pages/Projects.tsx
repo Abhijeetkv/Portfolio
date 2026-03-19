@@ -1,6 +1,6 @@
 import StarBackground from "../components/StarBackground"
-import HamsterWheel from "../components/ui/HamsterWheel"
 import { useEffect } from "react"
+import Projectss from "../components/Projects"
 
 const Projects = () => {
     useEffect(() => {
@@ -9,9 +9,7 @@ const Projects = () => {
   return (
     <>
     <StarBackground />
-    <div className="flex items-center justify-center min-h-screen">
-        <HamsterWheel />
-    </div>
+    <Projectss />
   </>
   )
 }
