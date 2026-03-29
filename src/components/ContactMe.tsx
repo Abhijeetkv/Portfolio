@@ -57,7 +57,7 @@ const ContactMe: React.FC = () => {
           </span>
         </h2>
 
-        <p className="text-start text-neutral-400 leading-relaxed text-muted-foreground md:mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-neutral-400 leading-relaxed text-muted-foreground md:mb-12 max-w-2xl mx-auto">
           Have a project in mind or want to collaborate? Feel free to reach out.
           I'm always open to discussing new opportunities.
         </p>

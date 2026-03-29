@@ -82,7 +82,7 @@ const AboutSection: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold mt-2">
             About <span className="text-neutral-400">Me</span>
           </h2>
-          <p className="text-theme-muted-fg text-neutral-400 leading-relaxed text-start t max-w-2xl mx-auto mt-4">
+          <p className="text-theme-muted-fg text-neutral-400 leading-relaxed text-center t max-w-2xl mx-auto mt-4">
             I’m a Full Stack Developer driven by a passion for designing robust
             architectures and functional, data-driven solutions that deliver
             real-world impact.
