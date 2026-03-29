@@ -5,9 +5,9 @@ import {
   FileText,
   MessageCircle,
 } from "lucide-react";
-import abhij from "../assets/images/abhij.jpg";
 import cover from "../assets/images/cover.png";
 import { FaXTwitter } from "react-icons/fa6";
+import jeet from "../assets/images/jeet.jpg";
 
 const socialLinks = [
   { icon: Github, label: "GitHub", href: "https://github.com/Abhijeetkv" },
@@ -88,7 +88,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="w-full h-48 rounded-xl overflow-hidden mb-6 border border-white/5 inset-0"
+          className="w-full h-48 rounded-sm overflow-hidden mb-6 border border-white/5 inset-0"
           style={{
             background: `
               repeating-linear-gradient(
@@ -112,18 +112,16 @@ const Hero = () => {
           <img src={cover} alt="cover" className="h-full" />
         </motion.div>
 
-        {/* Profile Section */}
         <div className="flex flex-col lg:flex-row lg:items-start gap-8">
           <div className="flex-1">
-            {/* Avatar + Name */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               className="flex items-center gap-4 mb-6 -mt-16"
             >
-              <div className="w-22 h-22 rounded-xl bg-white flex items-center justify-center  overflow-hidden">
-                <img src={abhij} alt="Abhijeet Kumar" />
+              <div className="w-22 h-22 rounded-sm bg-white flex items-center justify-center  overflow-hidden">
+                <img src={jeet} alt="Abhijeet Kumar" />
               </div>
             </motion.div>
 
