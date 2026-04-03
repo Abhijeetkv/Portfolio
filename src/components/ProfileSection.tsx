@@ -180,7 +180,7 @@ const Hero = () => {
               className="flex gap-3 mb-12"
             >
               <a
-                href="/resume.pdf"
+                href="/Resume1.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 rounded-lg bg-neutral-800/80 border border-white/10 text-white text-sm font-medium hover:bg-neutral-700/80 transition-all duration-200"
