@@ -28,7 +28,7 @@ export const projects: Project[] = [
       aspectRatio: "16 / 9",
     },
     github_link: "https://github.com/Abhijeetkv/ElevateU",
-    demo_link: "https://elevate-u-backend.vercel.app/",
+    demo_link: "https://elevate-u-five.vercel.app",
     technologies: [
       "MERN",
       "JavaScript",
