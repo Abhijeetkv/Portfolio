@@ -1,6 +1,6 @@
 import StarBackground from "../components/StarBackground"
 import { useEffect } from "react"
-import Projectss from "../components/Projects"
+import Projectss from "../components/AllProject"
 
 const Projects = () => {
     useEffect(() => {
