@@ -1,4 +1,4 @@
-import React, { useRef, Fragment } from "react";
+import React, { Fragment } from "react";
 import { motion } from "framer-motion";
 // import AgeCounter from "./ui/AgeCounter";
 
@@ -71,7 +71,7 @@ const toolboxItems2 = [
 // ];
 
 const AboutSection: React.FC = () => {
-  const constraintsRef = useRef<HTMLDivElement>(null);
+  // const constraintsRef = useRef<HTMLDivElement>(null);
 
   return (
     <section className="py-22 lg:py-28 bg-theme-bg text-theme-fg overflow-hidden">
