@@ -1,10 +1,10 @@
 import React, { useRef, Fragment } from "react";
 import { motion } from "framer-motion";
-// import AgeCounter from "./ui/AgeCounter";
+import AgeCounter from "./AgeCounter";
 
 // ✅ Import all assets
-// import Globe from "../assets/images/Globe.png";
-// import Abhi1 from "../assets/images/abhi1.jpg";
+import Globe from "../assets/images/Globe.png";
+import Abhi1 from "../assets/images/abhi1.jpg";
 import TypeScriptIcon from "../assets/images/typescript.png";
 import TailwindIcon from "../assets/images/tailwind.png";
 import PrismaIcon from "../assets/images/prisma.png";
@@ -59,16 +59,16 @@ const toolboxItems2 = [
   { title: "Stripe", icon: StripeIcon },
 ];
 
-// const hobbies = [
-//   { title: "Badminton 🏸", emoji: "🏸", left: "5%", top: "5%" },
-//   { title: "Photography", emoji: "📷", left: "50%", top: "5%" },
-//   { title: "Gaming", emoji: "🎮", left: "10%", top: "30%" },
-//   { title: "Music", emoji: "🎵", left: "70%", top: "45%" },
-//   { title: "Fitness", emoji: "🏋️‍♂️", left: "5%", top: "75%" },
-//   { title: "Athletics", emoji: "🏃‍♂️", left: "30%", top: "60%" },
-//   { title: "Traveling", emoji: "🌄", left: "40%", top: "40%" },
-//   { title: "Reading", emoji: "📚", left: "60%", top: "75%" },
-// ];
+const hobbies = [
+  { title: "Badminton 🏸", emoji: "🏸", left: "5%", top: "5%" },
+  { title: "Photography", emoji: "📷", left: "50%", top: "5%" },
+  { title: "Gaming", emoji: "🎮", left: "10%", top: "30%" },
+  { title: "Music", emoji: "🎵", left: "70%", top: "45%" },
+  { title: "Fitness", emoji: "🏋️‍♂️", left: "5%", top: "75%" },
+  { title: "Athletics", emoji: "🏃‍♂️", left: "30%", top: "60%" },
+  { title: "Traveling", emoji: "🌄", left: "40%", top: "40%" },
+  { title: "Reading", emoji: "📚", left: "60%", top: "75%" },
+];
 
 const AboutSection: React.FC = () => {
   const constraintsRef = useRef<HTMLDivElement>(null);
@@ -190,7 +190,7 @@ const AboutSection: React.FC = () => {
           </div>
 
           {/* Beyond the Code + Map */}
-          {/* <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-8 items-stretch">
             <div className="col-span-3 text-start lg:col-span-2 bg-theme-card text-theme-card-fg rounded-2xl p-6 shadow-lg border border-theme-border relative flex flex-col h-[300px] overflow-hidden">
               <h3 className="text-xl font-semibold mb-2">Beyond The Code</h3>
               <p className="text-sm text-neutral-400 leading-relaxed text-theme-muted-fg mb-4">
@@ -215,12 +215,13 @@ const AboutSection: React.FC = () => {
                   </motion.div>
                 ))}
               </div>
-            </div> */}
+            </div>
 
             {/* Map */}
 
             {/* Rotating Globe Section */}
-            {/* <div className="relative col-span-3 md:col-span-2 lg:col-span-1 rounded-2xl overflow-hidden shadow-lg border border-theme-border flex items-center justify-center h-[300px] bg-theme-card">
+            <div className="relative col-span-3 md:col-span-2 lg:col-span-1 rounded-2xl overflow-hidden shadow-lg border border-theme-border flex items-center justify-center h-[300px] bg-theme-card">
+              {/* 🌍 Rotating Globe */}
               <motion.img
                 src={Globe}
                 alt="Globe"
@@ -231,10 +232,10 @@ const AboutSection: React.FC = () => {
                   duration: 30, // adjust speed (smaller = faster)
                   ease: "linear",
                 }}
-              /> */}
+              />
 
               {/* 😄 Center Emoji (static, no blink) */}
-              {/* <div className="absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-neutral-400 flex items-center justify-center shadow-lg">
+              <div className="absolute  left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-neutral-400 flex items-center justify-center shadow-lg">
                 <img
                   src={Abhi1}
                   alt="Memoji"
@@ -244,8 +245,8 @@ const AboutSection: React.FC = () => {
               <div className="z-20 mt-14">
                 <AgeCounter birthDate="2005-12-16" />
               </div>
-            </div> */}
-          {/* </div> */}
+            </div>
+          </div>
         </div>
       </div>
     </section>
